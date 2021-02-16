@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="slogan">Yesterday You Said Tomorrow, So... Just Do It</div>
+        <div class="username"></div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-text todo">All Tasks</div>
+        <div class="sidebar-text due-today">Due Today</div>
+        <div class="sidebar-text projects"><span class="projects-text">Projects </span> <span class="arrow">^</span><span class="down-arrow">v</span>
+            <div class="add-project"></div>
+        </div>
+        <ul class=project-list>
+            <!-- <li class="list-items item1"><form>Take Car of Pets</form></li>
+            <li class="list-items item2">Eat lots of food for the fat boys</li>
+            <li class="list-items">Buy Christmas gifts for the young children</li> -->
+        </ul>
+    </div>
+    
+    <div class="task-container">
+        <div class="top-labels">
+            <div class="proj-name">All Tasks</div>
+            <pre class="pre-button"> - </pre>
+            <button type="button" name='del button' class="delete-proj-button">Delete Project</button>
+            <div class="addTask-button" ></div>
+            <div class="date-label">Due Date</div>
+        </div>
+        <div class="task-cell" style="display: none;" data-task="task1">
+            <input type="checkbox" class="task-checkbox"></input>
+            <div class="task-description">Feed Rusty two pounds of steel cut oats</div>
+            <div class="delete-symbol task-symbol"></div>
+            <div class="edit-symbol task-symbol"></div>
+            <div class="due-date">01/22/21</div>
+        </div>
+    </div>
+
+    <div class="newTask-container">
+        <div class="newTask-field" id="task-title">Task:<input class="newTask-input" type="text"></div>
+        <div class="newTask-field" id="task-date">Due Date: <input class="newTask-input date" type="text"></div>
+        <div class="newTask-field" id="task-timeframe">Time Frame: <input class="newTask-input" type="text"></div>
+        <div class="newTask-field" id="task-extraDetails">Extra Details: <input class="newTask-input" id="extra-details" type="text"></div>
+        <div class="button-container"><button class="confirm sub-button" >Confirm</button><button class="exit sub-button" >Whoopsie</button></div>
+    </div>
+</body>
+
+    <!-- <script type="module" src="main.js"></script> -->
+    <script src="./bundle.js"></script>
+    <!-- <script type="module" src="constructors.js"></script>
+    <script type="module" src="dom.js"></script>
+    <script type="module" src="sidebar.js"></script> -->
+    
+</html>
